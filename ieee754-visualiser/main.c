@@ -103,7 +103,7 @@ void visualise(uint64_t const u, unsigned long const size) {
     uint64_t mantissa = u & mant_mask;
     double decoded_mantissa = decode_mantissa(mantissa, mant);
 
-    if (exponent != 0 && exponent != 255) {
+    if (exponent != 0 && exponent != (1 << exp) - 1) {
         // normalized values
         exponent -= bias;
         printf(format, sign ? -1 : 1, exponent, decoded_mantissa + 1);

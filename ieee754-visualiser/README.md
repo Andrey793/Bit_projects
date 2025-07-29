@@ -28,4 +28,21 @@ Double representation:
 > float representation:: Numerical result out of range
 double representation:: Numerical result out of range
 This number cant be represented as a float or double, so it cant be visualized
+
+> ./vis -inf
+> Float representation: 
+	-Inf
+	Sign:0  Exp:11111111  Frac:00000000000000000000000
+Double representation: 
+	-Inf
+	Sign:0  Exp:11111111111  Frac:0000000000000000000000000000000000000000000000000000
+
+> ./vis 16777217
+> Float representation: 
+	1 * 2^(24) * 1.000000000 
+	Sign:0  Exp:10010111  Frac:00000000000000000000000
+Double representation: 
+	1 * 2^(24) * 1.0000000596046448 
+	Sign:0  Exp:10000010111  Frac:0000000000000000000000010000000000000000000000000000
+
 ```
